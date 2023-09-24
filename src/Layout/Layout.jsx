@@ -5,7 +5,7 @@ import Navbar from '../assets/Components/Header/Navbar';
 const Layout = () => {
       return (
             <div className='container mx-auto px-8'>
-                  <Navbar></Navbar>
+                  <div className='z-10'><Navbar></Navbar></div>
                   <Outlet></Outlet>
             </div>
       );
