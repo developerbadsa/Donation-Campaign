@@ -1,46 +1,46 @@
+import { NavLink } from "react-router-dom";
+import Logo from "./Logo/Logo";
 
 
 const Navbar = () => {
       return (
             <div>
-                  <nav className="mx-auto block w-full max-w-screen-xl rounded-xl border border-white/80 bg-white bg-opacity-80 py-2 px-4 text-white shadow-md backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
+                  <nav className="mx-auto   bg-white bg-transparent py-2 text-white lg:px-8 lg:py-4">
                         <div>
                               <div className="container mx-auto flex items-center justify-between text-gray-900">
-                                    <a
-                                          href="#"
-                                          className="mr-4 block cursor-pointer py-1.5 font-sans text-sm font-normal leading-normal text-inherit antialiased"
-                                    >
-                                          <span>Material Tailwind</span>
-                                    </a>
-                                    <ul className="hidden items-center gap-6 lg:flex">
-                                          <li className="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased">
-                                                <a className="flex items-center" href="#">
-                                                      Pages
-                                                </a>
+                                    <Logo></Logo>
+                                    <ul className="hidden items-center gap-6 text-lg  text-[#0B0B0B] lg:flex">
+                                          <li>
+                                                <NavLink
+                                                      to="/"
+                                                      className={({ isActive, isPending }) =>
+                                                            isPending ? "" : isActive ? "text-[#FF444A] font-bold" : ""
+                                                      }
+                                                >
+                                                      Home
+                                                </NavLink>
                                           </li>
-                                          <li className="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased">
-                                                <a className="flex items-center" href="#">
-                                                      Account
-                                                </a>
+                                          <li>
+                                                <NavLink
+                                                      to="/donation"
+                                                      className={({ isActive, isPending }) =>
+                                                            isPending ? "" : isActive ? "text-[#FF444A] font-bold" : ""
+                                                      }
+                                                >
+                                                      Donation
+                                                </NavLink>
                                           </li>
-                                          <li className="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased">
-                                                <a className="flex items-center" href="#">
-                                                      Blocks
-                                                </a>
-                                          </li>
-                                          <li className="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased">
-                                                <a className="flex items-center" href="#">
-                                                      Docs
-                                                </a>
+                                          <li>
+                                                <NavLink
+                                                      to="/statistics"
+                                                      className={({ isActive, isPending }) =>
+                                                            isPending ? "" : isActive ? "text-[#FF444A] font-bold" : ""
+                                                      }
+                                                >
+                                                      Statistics
+                                                </NavLink>
                                           </li>
                                     </ul>
-                                    <button
-                                          className="middle none center hidden rounded-lg bg-gradient-to-tr from-pink-600 to-pink-400 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
-                                          type="button"
-                                          data-ripple-light="true"
-                                    >
-                                          <span>Buy Now</span>
-                                    </button>
                                     <button
                                           className="middle none relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] rounded-lg text-center font-sans text-xs font-medium uppercase text-blue-gray-500 transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
                                           data-collapse-target="navbar"
