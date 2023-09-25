@@ -3,6 +3,7 @@ import Layout from "../Layout/Layout";
 import Home from "../Pages/Home/Home";
 import Donation from "../Pages/Home/Sections/Donation/Donations";
 import Statistics from "../Pages/Statistics/Statistics";
+import DonationDetails from "../Pages/Home/Sections/Donation/DonationDetails/DonationDetails";
 
 const router = createBrowserRouter([
       {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
                   {
                         path: '/statistics',
                         element: <Statistics></Statistics>
+                  },
+                  {
+                        path: '/donate/:id',
+                        element: <DonationDetails></DonationDetails>
                   }
             ]
       }
