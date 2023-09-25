@@ -8,9 +8,7 @@ const DonationDetails = () => {
 
       const matchedData = datas?.find(data => data.id == getId.id);
 
-      const { id, card_bg_color, category, category_bg_color, picture, text_color, title
-            , donate_amount, description
-      } = matchedData;
+      const { id, picture, text_color, title, donate_amount, description } = matchedData;
 
       console.log(matchedData)
 
