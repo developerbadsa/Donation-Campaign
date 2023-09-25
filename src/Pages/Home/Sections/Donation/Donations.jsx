@@ -6,15 +6,14 @@ const Donations = () => {
       const [donations, setDonations] = useState([]);
        
       useEffect(()=>{
-            fetch('https://raw.githubusercontent.com/developerbadsa/Donation-Campaign/main/public/Donations.json')
+            fetch('../../../../../public/Donations.json')
             .then(res=>res.json())
             .then(data=>setDonations(data))
       },[])
 
 
-
       return (
-            <div>
+            <div className="grid grid-cols-4 gap-8">
                   {
                         donations.map(donation=> <Donation key={donation.id} donation={donation}></Donation>)
                   }
