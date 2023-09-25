@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import swal from "sweetalert";
 
 
 const DonationDetails = () => {
@@ -15,6 +16,7 @@ const DonationDetails = () => {
       
       setLocalstorage([...localstorage, matchedData])
       console.log(...localstorage)
+      swal("Wow!", `You Donated $${donate_amount}`, "success");
      }
      
       return (
