@@ -16,7 +16,7 @@ const Donations = () => {
       return (
             <div>
                   {
-                        donations.map(donation=> <Donation key={}></Donation>)
+                        donations.map(donation=> <Donation key={donation.id} donation={donation}></Donation>)
                   }
             </div>
       );
