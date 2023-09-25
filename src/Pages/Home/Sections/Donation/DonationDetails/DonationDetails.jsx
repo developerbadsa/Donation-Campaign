@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { json, useLoaderData, useParams } from "react-router-dom";
 import swal from "sweetalert";
 
 
@@ -12,13 +12,16 @@ const DonationDetails = () => {
 
       const { id, picture, text_color, title, donate_amount, description } = matchedData;
       const [localstorage, setLocalstorage] = useState([])
-     const handleDonateAmount = ()=>{
-      
-      setLocalstorage([...localstorage, matchedData])
-      console.log(...localstorage)
-      swal("Wow!", `You Donated $${donate_amount}`, "success");
-     }
      
+
+     const handleDonateAmount = ()=>{
+      const getData =  JSON.parse(localStorage.getItem('donatedData')) || [];
+      const updateData = [...getData, matchedData];
+      swal("Wow!", `You Donated $${donate_amount}`, "success");
+      localStorage.setItem('donatedData', JSON.stringify(updateData))
+     }
+
+
       return (
             <div className='rounded py-24' to={`donate/${id}`}>
 
