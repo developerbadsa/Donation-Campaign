@@ -111,5 +111,13 @@
       },
       {
         "picture": "https://github.com/ProgrammingHero1/donation-campaign/blob/main/Resources/Education.png?raw=true",
-        "title": "Community
+        "title": "Community Farming",
+        "category": "Education",
+        "category_bg_color": "bg-red-600",
+        "card_bg_color": "bg-red-600",
+        "text_button_bg_color": "bg-red-600",
+        "description": "Promote sustainable farming practices to address food insecurity.",
+        "donate_amount": 160
+      }
+    ]
     
