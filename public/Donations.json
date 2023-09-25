@@ -1,0 +1,123 @@
+[
+      {
+        "picture": "https://github.com/ProgrammingHero1/donation-campaign/blob/main/Resources/Clothing.png?raw=true",
+        "title": "Warm Blanket Drive",
+        "category": "Clothing",
+        "category_bg_color": "#79C23F",
+        "card_bg_color": "#79C23F26",
+        "text_button_bg_color": "#79C23F",
+        "description": "Donate warm blankets to help those in need during the cold winter months.",
+        "donate_amount": 150
+      },
+      {
+        "picture": "https://github.com/ProgrammingHero1/donation-campaign/blob/main/Resources/Food.png?raw=true",
+        "title": "Food Essentials Kit",
+        "category": "Food",
+        "category_bg_color": "rgba(248, 113, 71, 0.20)",
+        "card_bg_color": "rgba(248, 113, 71, 0.15)",
+        "text_button_bg_color": "#F87147",
+        "description": "Support families by providing essential food items and groceries.",
+        "donate_amount": 180
+      },
+      {
+        "picture": "https://github.com/ProgrammingHero1/donation-campaign/blob/main/Resources/Education.png?raw=true",
+        "title": "Educational Supplies",
+        "category": "Education",
+        "category_bg_color": "#ff444a33",
+        "card_bg_color": "#ff444a26",
+        "text_button_bg_color": "#FF444A",
+        "description": "Help children access quality education with school supplies and books.",
+        "donate_amount": 220
+      },
+      {
+        "picture": "https://github.com/ProgrammingHero1/donation-campaign/blob/main/Resources/Health.png?raw=true",
+        "title": "Clean Water Initiative",
+        "category": "Health",
+        "category_bg_color": "#0052ff33",
+        "card_bg_color": "#0052ff26",
+        "text_button_bg_color": "#0052FF",
+        "description": "Provide clean and safe drinking water to communities in need.",
+        "donate_amount": 170
+      },
+      {
+        "picture": "https://github.com/ProgrammingHero1/donation-campaign/blob/main/Resources/Rectangle%204288.png?raw=true",
+        "title": "Shelter Support",
+        "category": "Clothing",
+        "category_bg_color": "#79C23F",
+        "card_bg_color": "#79C23F26",
+        "text_button_bg_color": "#79C23F",
+        "description": "Contribute to housing initiatives for homeless individuals and families.",
+        "donate_amount": 160
+      },
+      {
+        "picture": "https://github.com/ProgrammingHero1/donation-campaign/blob/main/Resources/Rectangle%204288.png?raw=true",
+        "title": "Medical Aid Fund",
+        "category": "Food",
+        "category_bg_color": "rgba(248, 113, 71, 0.20)",
+        "card_bg_color": "rgba(248, 113, 71, 0.15)",
+        "text_button_bg_color": "#F87147",
+        "description": "Support medical care and treatment for those who can't afford it.",
+        "donate_amount": 190
+      },
+      {
+        "picture": "https://github.com/ProgrammingHero1/donation-campaign/blob/main/Resources/Health.png?raw=true",
+        "title": "Environmental Conservation",
+        "category": "Health",
+        "category_bg_color": "#0052ff33",
+        "card_bg_color": "#0052ff26",
+        "text_button_bg_color": "#0052FF",
+        "description": "Contribute to efforts aimed at protecting the environment and wildlife.",
+        "donate_amount": 130
+      },
+      {
+        "picture": "https://github.com/ProgrammingHero1/donation-campaign/blob/main/Resources/Education.png?raw=true",
+        "title": "Children's Education Fund",
+        "category": "Education",
+        "category_bg_color": "#ff444a33",
+        "card_bg_color": "#ff444a26",
+        "text_button_bg_color": "#FF444A",
+        "description": "Empower children with access to quality education and resources.",
+        "donate_amount": 210
+      },
+      {
+        "picture": "https://github.com/ProgrammingHero1/donation-campaign/blob/main/Resources/Health.png?raw=true",
+        "title": "Elderly Care Assistance",
+        "category": "Health",
+        "category_bg_color": "#0052ff33",
+        "card_bg_color": "#0052ff26",
+        "text_button_bg_color": "#0052FF",
+        "description": "Provide care and support to elderly individuals in need of assistance.",
+        "donate_amount": 140
+      },
+      {
+        "picture": "https://github.com/ProgrammingHero1/donation-campaign/blob/main/Resources/Clothing.png?raw=true",
+        "title": "Empowerment Workshops",
+        "category": "Clothing",
+        "category_bg_color": "#79C23F",
+        "card_bg_color": "#79C23F26",
+        "text_button_bg_color": "#79C23F",
+        "description": "Organize workshops to empower individuals with valuable skills and knowledge.",
+        "donate_amount": 180
+      },
+      {
+        "picture": "https://github.com/ProgrammingHero1/donation-campaign/blob/main/Resources/Food.png?raw=true",
+        "title": "Emergency Relief Fund",
+        "category": "Food",
+        "category_bg_color": "rgba(248, 113, 71, 0.20)",
+        "card_bg_color": "rgba(248, 113, 71, 0.15)",
+        "text_button_bg_color": "#F87147",
+        "description": "Support humanitarian efforts during emergencies and disasters.",
+        "donate_amount": 250
+      },
+      {
+        "picture": "https://github.com/ProgrammingHero1/donation-campaign/blob/main/Resources/Education.png?raw=true",
+        "title": "Community Farming",
+        "category": "Education",
+        "category_bg_color": "#ff444a33",
+        "card_bg_color": "#ff444a26",
+        "text_button_bg_color": "#FF444A",
+        "description": "Promote sustainable farming practices to address food insecurity.",
+        "donate_amount": 160
+      }
+    ]
+    
