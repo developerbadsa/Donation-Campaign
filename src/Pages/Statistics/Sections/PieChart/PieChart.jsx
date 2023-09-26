@@ -21,7 +21,6 @@ const MyPieChart = ({ loadedData }) => {
   ];
 
   const options = {
-    title: 'My Daily Activities',
     colors: ['#00C49F', '#FF444A'],
     legend: 'none',
   }
