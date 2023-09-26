@@ -18,7 +18,7 @@ const MainDonation = () => {
       return (
             <>
 
-                  <div className="grid grid-cols-2 gap-8">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {
                               getDatas.length !== 0 ? getDatas.slice(0, showAll).map((data, inx) => <DonatedSection key={inx} data={data}></DonatedSection>) : <div className="text-xl font-semibold text-red-400 my-20 text-center">No Data Found In Donation</div>
                         }
