@@ -1,7 +1,7 @@
 const CustomLegendItem = ({ label, color }) => (
       <div className="flex items-center justify-center">
             <div className="ml-10">{label}</div>
-            <div className="w-10 rounded-xl mx-4 h-2" style={{ backgroundColor: color }}></div>
+            <div className="w-24 rounded-md mx-4 h-2" style={{ backgroundColor: color }}></div>
             
       </div>
 );
