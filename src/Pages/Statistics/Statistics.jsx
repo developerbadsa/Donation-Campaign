@@ -1,9 +1,10 @@
+import PieChart from "./Sections/PieChart/PieChart";
 
 
 const Statistics = () => {
       return (
             <div>
-                  statistics
+                  <PieChart></PieChart>
             </div>
       );
 };
