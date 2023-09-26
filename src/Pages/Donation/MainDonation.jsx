@@ -7,6 +7,8 @@ const MainDonation = () => {
       const getDatas = JSON.parse(localStorage.getItem('donatedData')) || []
       const [ShowBtn, setShowBtn] = useState(0);
       const [showAll, setShowAll] = useState(4)
+      const [hide, setHide] = useState(false)
+
 
       useEffect(() => {
             setShowBtn(getDatas.length + 1)
@@ -25,7 +27,7 @@ const MainDonation = () => {
                   </div>
                  <div className="text-center my-10 ">
                  {
-                              ShowBtn >= 4 ? <button onClick={()=>setShowAll(ShowBtn)} className="btn btn-md bg-[#009444] hover:bg-[#117049] text-white">See More</button> : ''
+                              ShowBtn >= 4 ? hide? '' :<button onClick={()=>{setShowAll(ShowBtn), setHide(!hide)}} className="btn btn-md bg-[#009444] hover:bg-[#117049] text-white">See More</button> : ''
                         }
                  </div>
             </>
