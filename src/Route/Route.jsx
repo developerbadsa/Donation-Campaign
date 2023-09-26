@@ -6,6 +6,9 @@ import Statistics from "../Pages/Statistics/Statistics";
 import DonationDetails from "../Pages/Home/Sections/Donation/DonationDetails/DonationDetails";
 import MainDonation from "../Pages/Donation/MainDonation";
 
+
+
+
 const router = createBrowserRouter([
       {
             path: '/',
@@ -21,7 +24,8 @@ const router = createBrowserRouter([
                   },
                   {
                         path: '/statistics',
-                        element: <Statistics></Statistics>
+                        element: <Statistics></Statistics>,
+                        loader: ()=> fetch('./../../public/Donations.json'),
                   },
                   {
                         path: '/donate/:id',

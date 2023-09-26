@@ -1,19 +1,30 @@
-
 import { Chart } from 'react-google-charts';
 import CustomLegend from './CustomLegend';
+import { useState, useEffect } from 'react';
 
-const MyPieChart = () => {
+const MyPieChart = ({ loadedData }) => {
+  const [localstorageData, setLocalstorageData] = useState(null);
+
+  useEffect(() => {
+    const storedData = localStorage.getItem('donatedData');
+
+    if (storedData) {
+      setLocalstorageData(JSON.parse(storedData));
+    }
+  }, []);
+
+  const localstorageDataLength = localstorageData ? localstorageData.length : 0;
   const data = [
-    ['Task', 'Hours per Day'],
-    ['Your Donation', 10],
-    ['Total Donation', 90],
+    [' ', ''],
+    ['Your Donation', localstorageDataLength],
+    ['Total Donation', loadedData],
   ];
 
   const options = {
     title: 'My Daily Activities',
-    colors: ['#FF444A', '#00C49F'],
+    colors: ['#00C49F', '#FF444A'],
     legend: 'none',
-  };
+  }
 
   const colors = options.colors;
 
@@ -28,7 +39,7 @@ const MyPieChart = () => {
       />
       <CustomLegend data={data.slice(1)} colors={colors} />
     </div>
-  );
+  )
 };
 
 export default MyPieChart;
