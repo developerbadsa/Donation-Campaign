@@ -27,7 +27,7 @@ const MainDonation = () => {
                   </div>
                  <div className="text-center my-10 ">
                  {
-                              ShowBtn >= 4 ? hide? '' :<button onClick={()=>{setShowAll(ShowBtn), setHide(!hide)}} className="btn btn-md bg-[#009444] hover:bg-[#117049] text-white">See More</button> : ''
+                              ShowBtn >= 4 ? hide? <button onClick={()=>{setShowAll(4),  setHide(!hide)}} className="btn btn-md bg-[#009444] hover:bg-[#117049] text-white">See Less</button> :<button onClick={()=>{setShowAll(ShowBtn), setHide(!hide)}} className="btn btn-md bg-[#009444] hover:bg-[#117049] text-white">See More</button> : ''
                         }
                  </div>
             </>
