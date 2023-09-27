@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Donation from "./Donation";
 
-const Donations = ({ ddddd }) => {
+const Donations = ({ Found }) => {
   const [donations, setDonations] = useState([]);
   const [searchedDonations, setSearchedDonations] = useState([]);
   
@@ -13,12 +13,12 @@ const Donations = ({ ddddd }) => {
   }, []);
 
   useEffect(() => {
-    if (ddddd.length === 0) {
+    if (Found.length === 0) {
       setSearchedDonations([]);
     } else {
-      setSearchedDonations(ddddd);
+      setSearchedDonations(Found);
     }
-  }, [ddddd, donations]); 
+  }, [Found, donations]); 
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

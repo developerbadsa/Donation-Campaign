@@ -3,15 +3,15 @@ import Donations from "./Sections/Donation/Donations";
 import Hero from "./Sections/Hero/Hero";
 
 const Home = () => {
- const [ddddd, setttddd] = useState([])
+ const [Found, setFound] = useState([])
       function getFilteredData(filteredDonations){
-            setttddd(filteredDonations)
+        setFound(filteredDonations)
         }
 
   return (
     <div className="">
       <Hero getFilteredData={getFilteredData}/>
-      <Donations ddddd={ddddd}/>
+      <Donations Found={Found}/>
     </div>
   );
 };
