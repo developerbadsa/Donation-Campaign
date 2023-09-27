@@ -4,7 +4,7 @@ import PieChart from "./Sections/PieChart/PieChart";
 
 const Statistics = () => {
 
-      const loadedData = useLoaderData().length
+      const loadedData = JSON.parse(useLoaderData()).length
       return (
             <div>
                   <PieChart loadedData={loadedData}></PieChart>

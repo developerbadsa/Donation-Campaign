@@ -1,16 +1,17 @@
 import { useState } from "react";
-import { json, useLoaderData, useParams } from "react-router-dom";
+import {  useLoaderData, useParams } from "react-router-dom";
 import swal from "sweetalert";
 
 
 const DonationDetails = () => {
 
-      const datas = useLoaderData()
+      const datas = JSON.parse(useLoaderData())
       const getId = useParams()
-
+console.log(datas)
       const matchedData = datas?.find(data => data.id == getId.id);
 
       const { id, picture, text_color, title, donate_amount, description } = matchedData;
+      const [localstorage, setLocalstorage] = useState([])
      
 
      const handleDonateAmount = ()=>{
