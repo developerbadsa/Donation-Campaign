@@ -5,7 +5,7 @@ const Hero = ({getFilteredData}) => {
   const [donations, setDonations] = useState([]);
 
   useEffect(() => {
-    fetch('../../../../../public/Donations.json')
+    fetch('https://raw.githubusercontent.com/developerbadsa/Donation-Campaign/main/public/Donations.json')
       .then(res => res.json())
       .then(data => setDonations(data));
   }, []);

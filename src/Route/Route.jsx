@@ -27,15 +27,15 @@ const router = createBrowserRouter([
                   {
                         path: '/statistics',
                         element: <Statistics></Statistics>,
-                        loader: ()=> fetch('./../../public/Donations.json'),
+                        loader: ()=> fetch('https://raw.githubusercontent.com/developerbadsa/Donation-Campaign/main/public/Donations.json'),
                   },
                   {
                         path: '/donate/:id',
                         element: <DonationDetails></DonationDetails>,
-                        loader: ()=> fetch('./../../public/Donations.json'),
+                        loader: ()=> fetch('https://raw.githubusercontent.com/developerbadsa/Donation-Campaign/main/public/Donations.json'),
                   }
             ]
       }
 ])
 
-export default router;
+export default router;  
