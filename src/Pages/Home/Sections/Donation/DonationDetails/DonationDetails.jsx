@@ -11,7 +11,6 @@ const DonationDetails = () => {
       const matchedData = datas?.find(data => data.id == getId.id);
 
       const { id, picture, text_color, title, donate_amount, description } = matchedData;
-      const [localstorage, setLocalstorage] = useState([])
      
 
      const handleDonateAmount = ()=>{
