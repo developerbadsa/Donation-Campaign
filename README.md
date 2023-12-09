@@ -1,31 +1,43 @@
-## Donate Campaign Website
+# Donate Campaign Website
 
-### Overview
-This is a README file for the Donate Campaign Website project. This website aims to facilitate donations and provide information about donation statistics. Below are the key features and components of this website.
+**Live Link:** [Donate Campaign Website](https://65146476d7b0131826ce9372--mellow-manatee-8a8fc8.netlify.app/)
 
-### Navigation
-- The website includes a consistent navbar on every page with the logo and a menu bar for easy navigation.
+## Overview
 
-### Home Page
-- The home page features a Hero section to grab users' attention and promote the donation campaign.
-- Donation items on the home page will redirect users to the Donate page when clicked.
-- The Hero section on the home page includes a search form to allow users to search for categorized donation items.
+This repository contains the codebase for the Donate Campaign Website, a platform designed to streamline the donation process and provide insights into donation statistics. The website is equipped with key features and components to enhance user experience and engagement.
 
-### Donate Details Page
-- When users click on a donation item on the home page, they will be redirected to the Donate Details page.
-- On this page, users can choose to donate a specific amount.
-- When the "Donate" button is clicked, the selected donation amount will be saved to the user's local storage for future reference.
+## Navigation
 
-### Donation Page
-- The Donation page displays the saved donation data from local storage.
-- If no data is available in local storage, a message indicating "No data found" will be displayed.
-- A "See More" button allows users to load more than the initial four donation items.
+The website boasts a user-friendly navigation system, featuring a consistent navbar on every page with the logo and a menu bar for seamless access to different sections.
 
-### Statistics Page
-- The Statistics page displays donation statistics using a pie chart to provide users with insights into the campaign's progress.
+## Home Page
 
-By implementing these features and components, we aim to create an effective and user-friendly Donate Campaign Website that encourages donations and provides valuable information to our users.
+- **Hero Section:** Captivating section to attract users' attention and promote the donation campaign.
+- **Donation Items:** Clickable items redirect users to the Donate page for detailed information.
+- **Search Form:** The Hero section includes a search form for users to find specific donation items.
 
-For detailed technical information and development instructions, please refer to the project's codebase and documentation.## State Management
+## Donate Details Page
 
-In this website, state management is crucial to ensure that user interactions, such as selecting courses and updating the cart, are handled smoothly. Here's an overview of how state management is implemented:
+- Users redirected from the home page can choose donation amounts.
+- The "Donate" button saves the selected amount to the user's local storage for future reference.
+
+## Donation Page
+
+- Displays saved donation data from local storage.
+- If no data is available, a message stating "No data found" is displayed.
+- "See More" button enables users to load more than the initial four donation items.
+
+## Statistics Page
+
+- Presents donation statistics through a pie chart, offering users insights into the campaign's progress.
+
+
+
+## Development Environment
+
+To set up the project locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/developerbadsa/Donation-Campaign.git`
+2. Install dependencies: `npm install`
+3. Run the development server: `npm start`
+
